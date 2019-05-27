@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7900C426229BE9F800FB8FE2 /* PageControlls.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795109FD229BE6C3008DCB9B /* PageControlls.xib */; };
+		795109FC229BE6C2008DCB9B /* PageControlls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795109FB229BE6C2008DCB9B /* PageControlls.swift */; };
+		795109FF229BE753008DCB9B /* GradientProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795109FE229BE753008DCB9B /* GradientProgressBar.swift */; };
+		79510A05229BE77A008DCB9B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510A00229BE778008DCB9B /* PageViewController.swift */; };
+		79510A06229BE77A008DCB9B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510A01229BE779008DCB9B /* FirstViewController.swift */; };
+		79510A07229BE77A008DCB9B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510A02229BE779008DCB9B /* InitialViewController.swift */; };
+		79510A08229BE77A008DCB9B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510A03229BE779008DCB9B /* SecondViewController.swift */; };
+		79510A09229BE77A008DCB9B /* WizardPageContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510A04229BE77A008DCB9B /* WizardPageContainerVC.swift */; };
 		79521B4922929CA50090F6B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79521B4822929CA50090F6B6 /* AppDelegate.swift */; };
-		79521B4B22929CA50090F6B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79521B4A22929CA50090F6B6 /* ViewController.swift */; };
 		79521B4E22929CA50090F6B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79521B4C22929CA50090F6B6 /* Main.storyboard */; };
 		79521B5022929CA80090F6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79521B4F22929CA80090F6B6 /* Assets.xcassets */; };
 		79521B5322929CA80090F6B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79521B5122929CA80090F6B6 /* LaunchScreen.storyboard */; };
@@ -34,9 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		795109FB229BE6C2008DCB9B /* PageControlls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlls.swift; sourceTree = "<group>"; };
+		795109FD229BE6C3008DCB9B /* PageControlls.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControlls.xib; sourceTree = "<group>"; };
+		795109FE229BE753008DCB9B /* GradientProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgressBar.swift; sourceTree = "<group>"; };
+		79510A00229BE778008DCB9B /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		79510A01229BE779008DCB9B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		79510A02229BE779008DCB9B /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		79510A03229BE779008DCB9B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		79510A04229BE77A008DCB9B /* WizardPageContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardPageContainerVC.swift; sourceTree = "<group>"; };
 		79521B4522929CA50090F6B6 /* PageController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79521B4822929CA50090F6B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79521B4A22929CA50090F6B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79521B4D22929CA50090F6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79521B4F22929CA80090F6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79521B5222929CA80090F6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				79521B4822929CA50090F6B6 /* AppDelegate.swift */,
-				79521B4A22929CA50090F6B6 /* ViewController.swift */,
 				79521B4C22929CA50090F6B6 /* Main.storyboard */,
 				79521B4F22929CA80090F6B6 /* Assets.xcassets */,
 				79521B5122929CA80090F6B6 /* LaunchScreen.storyboard */,
 				79521B5422929CA80090F6B6 /* Info.plist */,
+				795109FE229BE753008DCB9B /* GradientProgressBar.swift */,
+				795109FB229BE6C2008DCB9B /* PageControlls.swift */,
+				795109FD229BE6C3008DCB9B /* PageControlls.xib */,
+				79510A01229BE779008DCB9B /* FirstViewController.swift */,
+				79510A02229BE779008DCB9B /* InitialViewController.swift */,
+				79510A00229BE778008DCB9B /* PageViewController.swift */,
+				79510A03229BE779008DCB9B /* SecondViewController.swift */,
+				79510A04229BE77A008DCB9B /* WizardPageContainerVC.swift */,
 			);
 			path = PageController;
 			sourceTree = "<group>";
@@ -232,6 +253,7 @@
 				79521B5322929CA80090F6B6 /* LaunchScreen.storyboard in Resources */,
 				79521B5022929CA80090F6B6 /* Assets.xcassets in Resources */,
 				79521B4E22929CA50090F6B6 /* Main.storyboard in Resources */,
+				7900C426229BE9F800FB8FE2 /* PageControlls.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79521B4B22929CA50090F6B6 /* ViewController.swift in Sources */,
+				79510A09229BE77A008DCB9B /* WizardPageContainerVC.swift in Sources */,
+				79510A06229BE77A008DCB9B /* FirstViewController.swift in Sources */,
+				795109FC229BE6C2008DCB9B /* PageControlls.swift in Sources */,
 				79521B4922929CA50090F6B6 /* AppDelegate.swift in Sources */,
+				79510A07229BE77A008DCB9B /* InitialViewController.swift in Sources */,
+				79510A08229BE77A008DCB9B /* SecondViewController.swift in Sources */,
+				795109FF229BE753008DCB9B /* GradientProgressBar.swift in Sources */,
+				79510A05229BE77A008DCB9B /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

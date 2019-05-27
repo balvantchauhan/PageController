@@ -1,10 +1,9 @@
 //
-//  PageControllerTests.swift
-//  PageControllerTests
+//  WizardPageViewController.swift
+//  PageController
 //
 //  Created by Balvant Singh Chauhan on 20/05/19.
 //  Copyright © 2019 Balvant Singh Chauhan. All rights reserved.
-//
 
 import XCTest
 @testable import PageController

@@ -1,5 +1,5 @@
 //
-//  WizardNavControls.swift
+//  PageControlls.swift
 //  PageController
 //
 //  Created by Balvant Singh Chauhan on 20/05/19.
@@ -42,7 +42,7 @@ class PageControlls: UIView {
     }
     func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "WizardNavControls", bundle: bundle)
+        let nib = UINib(nibName: "PageControlls", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
     }
