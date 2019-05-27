@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageControlls" customModule="PageController" customModuleProvider="target">
+            <connections>
+                <outlet property="progressControlls" destination="lPh-Em-3Iv" id="uTU-Y1-85m"/>
+                <outlet property="progressNextButton" destination="ksm-Kv-YLs" id="FAf-sc-6af"/>
+                <outlet property="progressPerviousButtion" destination="yhR-cr-zj1" id="nAy-D9-hsk"/>
+                <outlet property="progressView" destination="DiO-el-HC7" id="7Ca-Gs-b6d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-3U-vDi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiO-el-HC7" userLabel="progressView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhR-cr-zj1">
+                                    <rect key="frame" x="46" y="0.0" width="31" height="93"/>
+                                    <color key="backgroundColor" red="0.1843137255" green="0.56862745100000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="31" id="ahA-Vn-pAK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="P">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="perviousButtonTapped:" destination="-1" eventType="touchUpInside" id="AE8-rh-StA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksm-Kv-YLs">
+                                    <rect key="frame" x="298" y="0.0" width="31" height="93"/>
+                                    <color key="backgroundColor" red="0.1843137255" green="0.56862745100000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="31" id="yRD-OX-gvA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="N">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="vUv-LP-gYJ"/>
+                                    </connections>
+                                </button>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lPh-Em-3Iv" customClass="GradientProgressBar" customModule="PageController" customModuleProvider="target">
+                                    <rect key="frame" x="88" y="41.5" width="199" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="8Ir-bh-Bfn"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </progressView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="yhR-cr-zj1" secondAttribute="bottom" id="9Hw-kv-kuF"/>
+                                <constraint firstItem="lPh-Em-3Iv" firstAttribute="centerY" secondItem="DiO-el-HC7" secondAttribute="centerY" id="GxF-fN-ede"/>
+                                <constraint firstItem="ksm-Kv-YLs" firstAttribute="top" secondItem="DiO-el-HC7" secondAttribute="top" id="Mt5-ug-H6s"/>
+                                <constraint firstItem="yhR-cr-zj1" firstAttribute="leading" secondItem="DiO-el-HC7" secondAttribute="leading" constant="46" id="Qel-fX-LeI"/>
+                                <constraint firstItem="yhR-cr-zj1" firstAttribute="top" secondItem="DiO-el-HC7" secondAttribute="top" id="SHQ-Zm-C7f"/>
+                                <constraint firstAttribute="bottom" secondItem="ksm-Kv-YLs" secondAttribute="bottom" id="a6Z-zq-pqP"/>
+                                <constraint firstItem="lPh-Em-3Iv" firstAttribute="leading" secondItem="yhR-cr-zj1" secondAttribute="trailing" constant="11" id="cWg-0H-l48"/>
+                                <constraint firstItem="ksm-Kv-YLs" firstAttribute="leading" secondItem="lPh-Em-3Iv" secondAttribute="trailing" constant="11" id="hLw-1y-5tJ"/>
+                                <constraint firstAttribute="trailing" secondItem="ksm-Kv-YLs" secondAttribute="trailing" constant="46" id="rQd-fH-Dmc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DiO-el-HC7" firstAttribute="centerX" secondItem="Nci-3U-vDi" secondAttribute="centerX" id="8Sp-Hj-UZy"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Nci-3U-vDi" secondAttribute="bottom" id="Zmc-BS-Nr7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nci-3U-vDi" secondAttribute="trailing" id="b61-lc-pPn"/>
+                <constraint firstItem="Nci-3U-vDi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dzc-tp-eyR"/>
+                <constraint firstItem="Nci-3U-vDi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nA3-MY-Nf6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-282.39999999999998" y="-352.17391304347831"/>
+        </view>
+    </objects>
+</document>
